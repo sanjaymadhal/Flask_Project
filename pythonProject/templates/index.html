@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Success Predictor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Sutv Solutions</div>
+        <nav class="nav">
+            <!-- The form -->
+            <form class="example" action="action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="{{ url_for('about_us') }}">About</a>
+            <a href="{{ url_for('contact_us') }}">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Predict Your <span>Academic Success</span></h1>
+        <p>Discover the potential of your academic journey with our predictive analytics tool</p>
+        <a href="#signup-section" class="button">Get Started</a>
+            <!-- Carousel -->
+           <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+               <!-- Indicators/dots -->
+               <div class="carousel-indicators">
+             <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+             <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+             <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+             </div>
+
+              <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+               <img src="https://img.freepik.com/premium-photo/data-analytics-dashboard-with-charts-graphs_1110022-24287.jpg" alt="Los Angeles" class="d-block w-100" >
+           </div>
+         <div class="carousel-item">
+            <img src="chicago.jpg" alt="Chicago" class="d-block w-100">
+         </div>
+         <div class="carousel-item">
+           <img src="ny.jpg" alt="New York" class="d-block w-100">
+         </div>
+        </div>
+
+         <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+             </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+    </section>
+
+    <section class="features">
+        <h2>Why Use Our <span>Predictor?</span></h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>Predictive Analytics</h3>
+                <p>Advanced academic predictions</p>
+                <a href="#learn-more" onclick="showDetails('Ananlytics')">Learn More</a>
+            </div>
+            <div class="feature-card">
+                <h3>Performance Tracking</h3>
+                <p>Monitor student progress effectively</p>
+                <a href="#learn-more" onclick="showDetails('Tracking')">Learn More</a>
+            </div>
+            <div class="feature-card">
+                <h3>Personalized Recommendations</h3>
+                <p>Tailored advice for improvement</p>
+                <a href="#learn-more" onclick="showDetails('Recommendations')">Learn More</a>
+            </div>
+            <div class="feature-card">
+                <h3>Easy-to-Use Interface</h3>
+                <p>Navigate our platform with ease</p>
+                <a href="#learn-more" onclick="showDetails('Interface')">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works">
+        <h2>How It <span>Works</span></h2>
+        <div class="steps">
+            <div class="step">
+                <h3>Step 1: Input Student Data</h3>
+                <p>Enter grades, attendance, and more</p>
+            </div>
+            <div class="step">
+                <h3>Step 2: Data Analysis</h3>
+                <p>Our system analyzes the data</p>
+            </div>
+            <div class="step">
+                <h3>Step 3: Receive Predictions</h3>
+                <p>Get insights and predictions</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>What Our <span>Users</span> Say</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <p>"Transformed my study habits!"</p>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="testimonial-card">
+                <p>"Must-have for all educators!"</p>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="testimonial-card">
+                <p>"Understand my child's progress."</p>
+                <div class="stars">★★★★★</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="signup-section" id="signup-section">
+        <h2>Ready to <span>Get Started?</span></h2>
+        <form class="signup-form">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Create Password" required>
+            <button type="button" class="button" onclick="showPopup()">Submit</button>
+        </form>
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <p>Thank you for signing up!</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#privacy">Privacy Policy</a> |
+            <a href="#terms">Terms of Service</a> |
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <p>Follow us on:</p>
+            <div class="social-buttons">
+                <a href="#" class="social-icon">
+                  <img src="assets/twitter.svg" alt="Twitter">
+                </a>
+                <a href="#" class="social-icon">
+                  <img src="assets/instagram.svg" alt="Instagram">
+                </a>
+                <a href="#" class="social-icon">
+                  <img src="assets/linkedin.svg" alt="LinkedIn">
+                </a>
+              </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

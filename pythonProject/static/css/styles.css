@@ -1,0 +1,276 @@
+
+        * {
+            margin: 0 auto;
+            padding: 0 auto;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        .header {
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .nav a {
+            margin-left: 2rem;
+            text-decoration: none;
+            color: black;
+        }
+
+        * {
+            box-sizing: border-box;
+          }
+
+          /* Style the search field */
+          form.example input[type=text] {
+            padding: auto;
+            font-size: 17px;
+            border: 1px solid grey;
+            float: left;
+            width: 80%;
+            background: #f1f1f1;
+            border-radius:25px;
+          }
+
+          /* Style the submit button */
+          form.example button {
+            float: left;
+            width: 10%;
+            padding: auto;
+            background: #2196F3;
+            color: white;
+            border-radius:1px;
+            font-size: 17px;
+            border: 1px solid grey;
+            border-left: none; /* Prevent double borders */
+            cursor: pointer;
+          }
+
+          form.example button:hover {
+            background: #0b7dda;
+          }
+
+          /* Clear floats */
+          form.example::after {
+            content: "";
+            clear: both;
+            display: table;
+          }
+
+        .hero {
+            background-color: black;
+            color:whitesmoke;
+            padding: 4rem 5%;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: whitesmoke;
+        }
+
+        .hero p {
+            color: lightblue;
+            margin-bottom: 2rem;
+        }
+
+        .popup {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+            z-index: 1; /* Sit on top */
+        }
+        .popup-content {
+            background-color: #fff;
+            margin: 15% auto; /* 15% from the top and centered */
+            padding: 20px;
+            border: 3px solid #888;
+            border-radius: 10px;
+            width: 30%; /* Could be more or less, depending on screen size */
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .placeholder-image {
+            width: 600px;
+            height: 400px;
+            background-color: #ddd;
+            margin: 2rem auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+        }
+
+        .button {
+            background-color: #1a73e8;
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 25px;
+            text-decoration: none;
+            display: inline-block;
+            margin: 1rem 0;
+        }
+
+        .features {
+            padding: 4rem 5%;
+            text-align: center;
+            color: whitesmoke;
+            background-color: black;
+        }
+
+        .features h2 {
+            margin-bottom: 3rem;
+            color: whitesmoke;
+        }
+
+        .features-grid {
+            display: grid;
+            padding: auto;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+            color: black;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgb(117, 116, 116);
+        }
+
+        .how-it-works {
+            background-color: black;
+            padding: 4rem 5%;
+            text-align: center;
+            color: whitesmoke;
+        }
+
+        span{
+            color: coral;
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .step {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .testimonials {
+            padding: 4rem 5%;
+            text-align: center;
+            color: whitesmoke;
+            background-color: black;
+        }
+
+        .testimonials-grid {
+            color: black;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(117, 116, 116);
+        }
+
+        .stars {
+            color: #ffd700;
+            margin: 1rem 0;
+        }
+
+        .signup-section {
+            background-color: black;
+            color: whitesmoke;
+            padding: 4rem 5%;
+            text-align: center;
+        }
+
+        .signup-form {
+            max-width: 400px;
+            margin: 2rem auto;
+            background: lightslategrey;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .signup-form input {
+            width: 100%;
+            padding: 0.8rem;
+            color: black;
+            margin: 0.5rem 0;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+
+        footer {
+            padding: 2rem 5%;
+            background-color: black;
+            color: whitesmoke;
+            text-align: center;
+        }
+
+        .social-buttons {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+}
+.social-icon {
+display: inline-block;
+width: 40px;
+height: 40px;
+background-color: white;
+border-radius: 50%;
+transition: background-color 0.3s ease;
+}
+.social-icon:hover {
+background-color: coral;
+margin-top: -10px;
+}
+.social-icon img {
+width: 20px;
+height: 35px;
+fill: #fff;
+vertical-align: middle;
+}
